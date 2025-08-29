@@ -1,0 +1,43 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.eggs/
+*.log
+
+# ---- Entornos virtuales ----
+.venv/
+venv/
+ENV/
+env/
+.Python
+
+# ---- Dagster ----
+# Directorios temporales / internos
+covid_pipeline/.tmp_dagster_home*/
+.instance/
+storage/
+.history/
+*.db
+*.sqlite
+
+# ---- Datos crudos (no se deben versionar) ----
+*.csv
+*.parquet
+*.duckdb
+
+# Mantener solo artefactos ligeros y reportes
+!tabla_perfilado.csv
+!reportes/*.xlsx
+!reportes/plots/*.png
+
+# ---- IDE / SO ----
+.vscode/
+.idea/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
